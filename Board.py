@@ -159,9 +159,10 @@ while work:
             color = (255,255,255)
         else:
             color = (65,65,65)
-
+        
         screen.fill(board_color)
         font = pygame.font.Font('/usr/share/fonts/truetype/msttcorefonts/Arial.ttf', 50)
+        pygame.time.wait(450)
         winner = font.render(" Player "+str(player)+" won" ,True, color)
         screen.blit(winner,(100,100))
         pygame.display.flip()
